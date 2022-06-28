@@ -1,0 +1,11 @@
+<div class="overlay" *ngIf="isActive" (click)="hide()"></div>
+
+<button *ngIf="!isActive" (click)="addActive()">
+  <i class="fa-solid fa-magnifying-glass"> </i>
+</button>
+
+<button [@searchBtn] class="btn-search" *ngIf="isActive">Найти</button>
+
+<div class="wrapper">
+  <search-input *ngIf="isActive" [@searchOpen] class="input" [formControl]="searchControl"></search-input>
+</div>

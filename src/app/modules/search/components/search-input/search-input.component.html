@@ -1,0 +1,10 @@
+<label>
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input
+    class="search"
+    type="text"
+    [value]="value"
+    (input)="handleInput($event)"
+  />
+  <button *ngIf="isFull" class="clear" (click)="clear()">X</button>
+</label>

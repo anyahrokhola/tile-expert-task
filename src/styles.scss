@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+i {
+  color: white;
+}
+button {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-search {
+  padding: 10px;
+  background-color: #ffc120;
+  color: white;
+  text-transform: uppercase;
+  transition: background-color 300ms;
+
+  &:hover{
+    background-color: #a67904;
+  }
+}
