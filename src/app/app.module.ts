@@ -7,9 +7,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SearchModule } from './modules/search/search.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent],
+  declarations: [AppComponent, HeaderComponent, MobileMenuComponent, MenuComponent],
   imports: [
     BrowserModule,
     TooltipModule.forRoot(),

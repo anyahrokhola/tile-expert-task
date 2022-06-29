@@ -1,3 +1,4 @@
+@import '../../../../../assets/scss/variables.scss';
 :host {
   position: relative;
   display: flex;
@@ -5,6 +6,11 @@
   align-items: center;
   margin-left: 30px;
   width: 70px;
+
+  @media screen and (max-width: $xl) {
+    width: 40px;
+    margin-left: 0;
+  }
 }
 
 .overlay {
@@ -21,11 +27,27 @@
   z-index: 10;
 }
 
-.wrapper {
+.input-wrapper {
   overflow: hidden;
   position: absolute;
   right: 100%;
   width: 675px;
+
+  @media screen and (max-width: $xl) {
+    width: 590px;
+  }
+
+  @media screen and (max-width: $lg) {
+    width: 510px;
+  }
+
+  @media screen and (max-width: $md) {
+    width: 350px;
+  }
+  @media screen and (max-width: $sm) {
+    width: 100%;
+  }
+
 }
 
 .input {
@@ -33,4 +55,9 @@
   background-color: white;
 }
 
+.btn-search {
+  @media screen and (max-width: $sm) {
+    padding: 5px;
+  }
+}
 

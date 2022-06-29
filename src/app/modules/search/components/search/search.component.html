@@ -6,6 +6,6 @@
 
 <button [@searchBtn] class="btn-search" *ngIf="isActive">Найти</button>
 
-<div class="wrapper">
+<div class="input-wrapper">
   <search-input *ngIf="isActive" [@searchOpen] class="input" [formControl]="searchControl"></search-input>
 </div>

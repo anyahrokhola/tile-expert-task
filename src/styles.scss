@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+a {
+  text-decoration: none;
+}
 i {
   color: white;
 }
@@ -17,7 +20,7 @@ button {
   text-transform: uppercase;
   transition: background-color 300ms;
 
-  &:hover{
+  &:hover {
     background-color: #a67904;
   }
 }

@@ -1,0 +1,64 @@
+@import "../../../assets/scss/variables.scss";
+
+:host{
+    padding: 0;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (max-width: $md) {
+    flex-direction: column;
+  }
+}
+
+li {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  
+
+  @media screen and (max-width: $lg) {
+    margin-right: 15px;
+  }
+}
+
+i {
+  margin-left: 8px;
+
+  @media screen and (max-width: $lg) {
+    margin-left: 5px;
+  }
+}
+
+a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+
+  @media screen and (max-width: $lg) {
+    font-size: 12px;
+  }
+
+  &.icon {
+    display: none;
+
+    @media screen and (max-width: $md) {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0px;
+    }
+  }
+  @media screen and (max-width: $md) {
+    padding: 5px;
+    display: block;
+  }
+}
