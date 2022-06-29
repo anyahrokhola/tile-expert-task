@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { Component, ElementRef, HostBinding, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { searchBtnAnimation, searchOpenAnimation } from '../../animations/search.animation';
 
@@ -9,7 +9,7 @@ import { searchBtnAnimation, searchOpenAnimation } from '../../animations/search
   animations: [searchOpenAnimation, searchBtnAnimation]
 })
 export class SearchComponent implements OnInit {
-  public isActive: boolean = false;
+  @HostBinding('class.active') public isActive: boolean = false;
   public searchControl = new FormControl();
 
   constructor() {}

@@ -34,17 +34,14 @@
   width: 675px;
 
   @media screen and (max-width: $xl) {
-    width: 590px;
+    width: 640px;
   }
 
   @media screen and (max-width: $lg) {
-    width: 510px;
+    width: 440px;
   }
 
   @media screen and (max-width: $md) {
-    width: 350px;
-  }
-  @media screen and (max-width: $sm) {
     width: 100%;
   }
 
@@ -56,7 +53,7 @@
 }
 
 .btn-search {
-  @media screen and (max-width: $sm) {
+  @media screen and (max-width: $md) {
     padding: 5px;
   }
 }
