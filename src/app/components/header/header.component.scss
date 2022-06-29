@@ -57,13 +57,13 @@
 }
 
 search {
-  @media screen and (max-width: $md) {  
+  @media screen and (max-width: $md) {
     position: fixed;
     top: 10px;
     right: 20px;
     width: 40px;
 
-    &.active{
+    &.active {
       width: 100%;
     }
 
