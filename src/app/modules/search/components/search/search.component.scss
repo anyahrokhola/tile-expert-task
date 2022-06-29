@@ -53,8 +53,15 @@
 }
 
 .btn-search {
+
+  @media screen and (max-width: $lg) {
+    padding: 7px;
+  }
+
   @media screen and (max-width: $md) {
     padding: 5px;
   }
+
+  
 }
 

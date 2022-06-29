@@ -86,13 +86,16 @@ menu {
   display: flex;
   justify-content: end;
   align-items: center;
+  
 
   @media screen and (max-width: $lg) {
     margin: auto;
   }
 
   @media screen and (max-width: $md) {
-    margin: 10px auto 0;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0 0;
   }
 
   i {
